@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	--font-family: "Caveat", cursive, Arial, sans-serif;
+    font-family: serif;
+	--background: url("/g1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	--background-color:#f8f3ed;
+    text-rendering: optimizeLegibility !important;
+	background-color:#faf8f7;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow-x: hidden;
+    text-shadow: 1px 1px 1px #6f4e376c;
+} 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e3d3bf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6e4c33c9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6e4c33c9;
+}
+
+section {
+    --padding-top: 10px;
+    --padding-bottom: 20px;
+    --position: relative;
+    --width: 100%;
+}
+
+.box {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.082); /* Adjust the values as needed */
+    --background-color: #23bcaa4b;
+}
+
+.chatPage {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.185); /* Adjust the values as needed */
+    --background-color: #23bcaa4b;
+}
+.chatNav {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+.chatSideBar {
+    box-shadow: 0 0 5px #6f4e376c; /* Adjust the values as needed */
+    border-radius: .65rem;
+}
+.container1 {
+    height: 87.5%;
+}
+.chatBody {
+    box-shadow: 0 0 5px #6f4e376c; /* Adjust the values as needed */
+    border-radius: .65rem;
+}
+.text-searchResult{
+    font-size: 10px;
+}
+
+.uploadFirstCrad{
+    border: .5px dashed;
+    border-color: #e3d3bf;
+}
+
+/* .text-shadow{
+    text-shadow: 1px 1px 1px #6f4e376c; 
+} 
+*/
+
+/*----------------------------------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-------------------------- For Chatting Page -------------------------------------*/
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+@media (max-width: 335px) {
+    .ellipsis {
+        max-width: 110px;
+    }
+}
+
+.ellipsis-book {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+}
+
+/*-------------------------- For Comments -------------------------------------*/
+/*-------------------------- For Books    -------------------------------------*/
+.book{
+	box-shadow: 0 0 15px rgba(14, 13, 13, 0.151); /* Adjust the values as needed */
+}
+
+.bookCard:hover {
+    transition: transform .3s ease-out;
+    transform: translateY(-1rem);
+    box-shadow: 0 0 20px rgba(14, 13, 13, 0.151); /* Adjust the values as needed */
+}
+
+/*------------------------------------------------------------------------------*/
+/* .checkbox-wrapper input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 0.4em;
+    margin-right: 0.1em;
+    border: 0.15em solid #6F4E37;
+    outline: none;
+    cursor: pointer;
+} */
+
+.customDataGrid .MuiDataGrid-root {
+  border: 2px solid #6F4E37; /* Example: change border color */
+  border-radius: 10px; /* Example: add border radius */
+}
+
+.customDataGrid .MuiDataGrid-cell {
+  color: #6F4E37; /* Example: change cell text color */
+}
+
+.customDataGrid .MuiDataGrid-columnHeaders {
+  background-color: #f5f5f5; /* Example: change header background color */
+}
+
+.customDataGrid .MuiDataGrid-columnHeaderTitle {
+  font-weight: bold; /* Example: make header text bold */
+}
+
+
+
+

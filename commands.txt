@@ -1,0 +1,47 @@
+// package.json
+npm init -y
+
+----------------------------------------------------------------
+
+change  "main": "index.js" to  "main": "server.js"
+then create "server.js" file in backend directory
+
+----------------------------------------------------------------
+
+// install needed packages in the root 
+npm install express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoken 
+
+//express -> running express
+//dotenv -> to be able to read environment variables in env file
+//cookie-parser -> to parse the cookie
+//bcryptjs -> to hash passwords
+//mongoose -> to connect to the db
+//socket.io -> for real time communication
+//jsonwebtoken -> to be able to create tokens
+
+----------------------------------------------------------------
+
+// write this in server.js 
+
+const express = require('express');
+
+const app = express();
+app.listen(5000, () => {
+    console.log('Server is running on port 5000');
+})
+
+then change the scripts in package.json 
+    -> replace this "test": "echo \"Error: no test specified\" && exit 1"
+    by this "server": "node backend/server.js"
+
+    --> then to run the project -> in the terminal -> npm run server 
+
+----------------------------------------------------------------
+install nodemon 
+ -> npm install nodemon --save-dev
+ change the script in package.json "node backend/server.js" to "nodemon backend/server.js"
+ -> then npm run server --> it'll show Hello World! on the port 5000
+
+----------------------------------------------------------------
+add -> "type": "module" to the package.json file to be able to use the import module format instead 
+        of requires
